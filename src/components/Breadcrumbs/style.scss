@@ -1,0 +1,47 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.Breadcrumbs {
+  @include container;
+      
+  &__list {
+    @include reset-list;
+    padding: 16px 0 25px;
+    
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 12px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+
+    background-image: url('./img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 4px 8px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-light-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darken($text-light-color, 50%);
+    }
+
+    &--active {
+      color: $light-blue-color;
+      cursor: auto;
+    }
+
+    &--active:hover {
+      color: $light-blue-color;
+    }
+  }
+}

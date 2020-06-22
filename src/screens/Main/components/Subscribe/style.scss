@@ -1,0 +1,46 @@
+@import '../../../../styles/mixins';
+
+.Subscribe {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 93px;
+  margin-bottom: -57px;
+
+  background-image: url('./img/footer-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+
+  &__form {
+    width: 100%;
+    max-width: 580px;
+  }
+
+  &__input {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    width: 100%;
+    padding: 21px;
+    padding-right: 144px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #898989;
+
+    border: 1px solid #F1F1F1;
+    border-radius: 10px;
+  }
+
+  .Button {
+    margin-left: -144px;
+  }
+
+  @media (max-width: 425px) {
+    background-image: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.Statistics {
+  @include container;
+
+  &__title {
+    color: $text-dark-color;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: bold;
+  }
+
+  &__chart-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 25px 0;
+  }
+
+  &__chart {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}

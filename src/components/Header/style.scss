@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Header {
+  @include container;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  height: 72px;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+
+  color: $text-white-color;
+  background-color: $light-blue-color;
+
+  &.main {
+    background-color: transparent;
+
+    @media (max-width: 425px) {
+      background-color: $light-blue-color;
+    }
+  }
+}

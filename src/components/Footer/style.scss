@@ -1,0 +1,43 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.Footer {
+  @include container;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  color: #FFFFFF;
+  background-color: $dark-blue-color;
+
+  &.main {
+    background-color: transparent;
+  }
+
+  &__rights {
+    margin: 0;
+  }
+
+  &__copyrights {
+    margin: 0;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    padding: 10px;
+
+    .Logo,
+    &__rights {
+      margin-bottom: 10px;
+    }
+
+    &.main {
+      background-color: $light-blue-color;
+    }
+  }
+}

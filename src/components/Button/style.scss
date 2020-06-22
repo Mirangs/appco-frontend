@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.Button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  padding: 17px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: opacity 0.6s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &.light {
+    background-color: #FFFFFF;
+    color: $light-blue-color;
+  }
+
+  &.dark {
+    background-color: $light-blue-color;
+    color: #FFFFFF;
+  }
+}
